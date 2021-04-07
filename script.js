@@ -48,8 +48,13 @@ function mixed () {
         return Math.floor(Math.random() * arr.length);
     }
 
-    const randLotto = () => {
-        return Math.floor(Math.random() * 60);
+    const randLotto = (numB) => {
+        let numD = [];
+        
+        for (let i = 0; i < numB; i++){
+            numD[i] = Math.floor(Math.random() * 60);             
+        }
+        return numD;        
     }
 
     let verb = verbData[randNum(verbData)];
@@ -58,7 +63,7 @@ function mixed () {
     let luck = luckData[randNum(luckData)];
     let watchOut = watchOutData[randNum(watchOutData)];
     let quotes = quotesData[randNum(quotesData)]; 
-    let lotto = [randLotto(), randLotto(), randLotto(), randLotto(), randLotto(), randLotto()];
+    let lotto = randLotto(6);
 
 
     let fullstr = `If you ${verb} ${persona} ${action} than ${luck}, but be careful ${watchOut}. 
