@@ -62,7 +62,7 @@ function mixed () {
 
 
     let fullstr = `If you ${verb} ${persona} ${action} than ${luck}, but be careful ${watchOut}. 
-    Lucky phrase: ${quotes}.`
+    Quote of the day: ${quotes}.`
 
     console.log('Today is your lucky day?');
     console.log(fullstr)
