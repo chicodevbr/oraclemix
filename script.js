@@ -13,7 +13,18 @@ const luckData = ['then you will win the lottery', 'then you will find great lov
 const watchOutData = ['a crow can land on your window', 'a whale may appear in your pool', 'a bear can show up for dinner']
 
 
+function mixed () {
+    function randNum (arr) {
+        return Math.floor(Math.random()* arr.lenght);
+    }
 
+    let verb = verbData[randNum(verbData)];
+    let persona = personaData[randNum(personaData)];
+    let action = actionData[randNum(actionData)];
+    let luck = luckData[randNum(luckData)];
+    let watchOut = watchOutData[randNum(watchOutData)]; 
+
+};
 
 
 //if you see the pope drinking tea, then you will win the lottery.
