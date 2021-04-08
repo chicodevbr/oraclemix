@@ -64,12 +64,11 @@ const mixed = () => {
     let lotto = randLotto(6);
 
 
-    let fullstr = `If you ${verb} ${persona} ${action} than ${luck}, but be careful ${watchOut}. 
-    Quote of the day: ${quotes}.`
+    let fullstr = `If you ${verb} ${persona} ${action} than ${luck}, but be careful ${watchOut}.`
 
     console.log('Today is your lucky day?');
-    console.log(fullstr)
-
+    console.log(fullstr);
+    console.log(`Quote of the day: ${quotes}.`)
     console.log(`Lucky Numbers: ${lotto}`);
 
 
