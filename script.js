@@ -40,10 +40,8 @@ const watchOutData = ['a crow can land on your window',
 'a clown can move in next door']
 
 
-function mixed () {
-    /*function randNum (arr){
-        return Math.floor(Math.random()* arr.lenght);
-    }*/
+const mixed = () => {
+    
     const randNum = arr => {
         return Math.floor(Math.random() * arr.length);
     }
